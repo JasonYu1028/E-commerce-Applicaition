@@ -58,11 +58,12 @@ function Footer() {
           <Typography variant="h4" fontWeight="bold" mb="30px">
             Contact Us
           </Typography>
+          
           <Typography mb="30px">
           Zijing Road, Jinmao Street, Longhua District, Haikou City, Hainan Province, China
           </Typography>
           <Typography mb="30px" sx={{ wordWrap: "break-word" }}>
-            Email: yuri@hnlzkj.cn
+            Email: yuri@hnlzkj.cn 
           </Typography>
           <Typography mb="30px">(226)581-1318</Typography>
         </Box>
