@@ -27,7 +27,10 @@ function Footer() {
             LONG ZHAO
           </Typography>
           <div>
-            SOME INTRODUCTION OR DESCRIPTION ABOUT THE COMPANY
+          LONG ZHAO is a trading company in Hainan China. We established longer and closer working relationships with our clients and suppliers not only to provide immediate and reliable services but to continually exceed expectations and goals.
+          </div>
+          <div>
+          We create commercial flows, import and export products, arranging and manage international projects with our partners. Supported by our network, we are able to integrate all these functions with our fruitful experience. Our numerous competencies allow us to respond to the needs of industries looking for a new market. We look forward to welcoming you to our company with the highest level of shopping experience and best customer service. 
           </div>
         </Box>
 
@@ -56,12 +59,12 @@ function Footer() {
             Contact Us
           </Typography>
           <Typography mb="30px">
-            50 north Whatever Blvd, Washington, DC 10501
+          Zijing Road, Jinmao Street, Longhua District, Haikou City, Hainan Province, China
           </Typography>
           <Typography mb="30px" sx={{ wordWrap: "break-word" }}>
-            Email: mredwardroh@gmail.com
+            Email: yuri@hnlzkj.cn
           </Typography>
-          <Typography mb="30px">(222)333-4444</Typography>
+          <Typography mb="30px">(226)581-1318</Typography>
         </Box>
       </Box>
     </Box>

@@ -10,6 +10,7 @@ import RemoveIcon from "@mui/icons-material/Remove";
 import { shades } from "../../theme";
 import { addToCart } from "../../state";
 import { useDispatch } from "react-redux";
+import ReactMarkdown from "react-markdown";
 
 const ItemDetails = () => {
   const dispatch = useDispatch();
@@ -59,25 +60,26 @@ const ItemDetails = () => {
             alt={item?.name}
             width="100%"
             height="100%"
-            src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
+            src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.small?.url}`}
             style={{ objectFit: "contain" }}
           />
         </Box>
 
         {/* ACTIONS */}
         <Box flex="1 1 50%" mb="40px">
-          <Box display="flex" justifyContent="space-between">
-            <Box>Home/Item</Box>
-            <Box>Prev Next</Box>
-          </Box>
 
           <Box m="65px 0 25px 0">
             <Typography variant="h3">{item?.attributes?.name}</Typography>
             <Typography>${item?.attributes?.price}</Typography>
             <Typography sx={{ mt: "20px" }}>
-              {item?.attributes?.longDescription}
+              <ReactMarkdown>
+                {item?.attributes?.shortDescription}
+              </ReactMarkdown>
+              <ReactMarkdown>
+                {item?.attributes?.longDescription}
+              </ReactMarkdown>
             </Typography>
-          </Box>
+          </Box> 
 
           <Box display="flex" alignItems="center" minHeight="50px">
             <Box
